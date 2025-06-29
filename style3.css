@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(135deg, #2ecc71, #1e272e, #badc58);
+    background-size: 600% 600%;
+    animation: gradientMove 18s ease infinite;
+  }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .hero-carousel img {
+        object-fit: cover;
+        height: 600px;
+        
+    }
+
+   .card-img-top {
+        height: 250px; /* o la altura que prefieras */
+        object-fit: cover;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body a.btn {
+  margin-top: auto;
+}
+
+
+
+    /* Navbar personalizado */
+    .navbar-custom {
+        background-color: #1e272e;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+        color: #ecf0f1;
+    }
+
+    .navbar-custom .nav-link:hover {
+        color: #badc58;
+    }
+
+    /* Footer personalizado */
+    .footer-custom {
+        background-color: #1e272e;
+        color: #ecf0f1;
+    }
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 40px 30px;
+}
+
+.btn-comprar {
+  background-color: #f6e58d;
+  color: #1e272e;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #ffbe76;
+  transform: scale(1.05);
+}
+
+.badge-precio {
+  background-color: #1e272e;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  border-radius: 12px;
+}
+
+.mensaje-compra {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-weight: bold;
+  z-index: 9999;
+}
+
+.contenedor-link-carrito a {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+
+.contenedor-link-carrito a:hover {
+  color: #f6e58d;
+}
