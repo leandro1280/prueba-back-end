@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciá sesión</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- Fuente Rubik -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Tu hoja de estilos personalizada -->
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Bienvenido</h2>
+    <form action="login_handler.php" method="POST">
+      <div class="form-group">
+        <i class="material-icons input-icon">person</i>
+        <input type="text" class="form-control" name="username" placeholder="Usuario" required />
+      </div>
+      <div class="form-group">
+        <i class="material-icons input-icon">lock</i>
+        <input type="password" class="form-control" name="password" placeholder="Contraseña" required />
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Login</button>
+    </form>
+
+    <div class="mt-3">
+      <a href="#">¿Olvidaste tu contraseña?</a>
+    </div>
+
+    <div>
+      <p>¿No tenés cuenta? <a href="register.html">Registrate</a></p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
